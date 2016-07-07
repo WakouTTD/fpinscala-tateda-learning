@@ -1,8 +1,15 @@
 *.un~
 *.swp
 tags
+<<<<<<< HEAD
 target
+=======
+*/target/*
+chaptercode/target/*
+chaptercode/target/
+>>>>>>> afdd793... first commit
 project/boot
+project/target/*
 .history
 project.vim
 *.old
