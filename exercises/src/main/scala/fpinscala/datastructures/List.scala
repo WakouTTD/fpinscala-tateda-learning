@@ -52,11 +52,31 @@ object List extends App { // `List` companion object. Contains functions for cre
 
   def tail[A](l: List[A]): List[A] = sys.error("todo")
 
+  def tail2[A](l: List[A]):List[A] = {
+    l match {
+      case Cons(x,y) => y
+    }
+  }
+
   def setHead[A](l: List[A], h: A): List[A] = sys.error("todo")
+
+  def setHead2[A](l: List[A], h: A): List[A] = l match {
+    case Nil => sys.error("setHead on empty list")
+    case Cons(_,t) => Cons(h,t)
+  }
 
   def drop[A](l: List[A], n: Int): List[A] = sys.error("todo")
 
+  def drop2[A](l: List[A], n: Int): List[A] =
+    if (n < 1) l
+    else l match {
+      case Nil => Nil
+      case Cons(_, t) => drop(t, n - 1)
+    }
+
   def dropWhile[A](l: List[A], f: A => Boolean): List[A] = sys.error("todo")
+
+
 
   def init[A](l: List[A]): List[A] = sys.error("todo")
 
