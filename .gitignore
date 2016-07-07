@@ -1,19 +1,29 @@
 *.un~
 *.swp
 tags
-<<<<<<< HEAD
 target
-=======
 */target/*
 chaptercode/target/*
 chaptercode/target/
->>>>>>> afdd793... first commit
 project/boot
 project/target/*
 .history
 project.vim
 *.old
-.idea
+.idea/*
+*/idea/*
 .project
 .classpath
 .metadata/
+answers/project/
+answers/src/main/java/
+answers/src/main/resources/
+answers/src/main/scala-2.11/
+answers/src/test/
+chaptercode/project/
+chaptercode/src/
+exercises/project/
+exercises/src/main/java/
+exercises/src/main/resources/
+exercises/src/main/scala-2.11/
+exercises/src/test/
